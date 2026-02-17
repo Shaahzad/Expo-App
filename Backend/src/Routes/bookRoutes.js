@@ -1,6 +1,7 @@
 import express from "express"
 import cloudinary from "../lib/cloudinary.js"
 import Book from "../models/Book.js"
+import ProtectRoute from "../middleware/auth.middleware.js"
 const router = express.Router()
 
 router.post("/", ProtectRoute, async (req, res) => {
@@ -19,7 +20,7 @@ router.post("/", ProtectRoute, async (req, res) => {
             caption,
             image: imageUrl,
             rating,
-            // user: req.user._id
+            user: req.user._id
         })
 
         await newBook.save()
