@@ -10,11 +10,14 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Link href={'/signup'}>
-        signup
-      </Link>
-      <Link href={'/(auth)'}>
-        login
+      <Link href={'/signup'} style={{
+        backgroundColor: 'blue',
+        paddingHorizontal: 20,
+        paddingVertical: 20,
+        borderRadius: 16,
+        color: 'white'
+      }}>
+        Create An Account
       </Link>
     </View>
   );
