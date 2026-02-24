@@ -60,12 +60,17 @@ const style = StyleSheet.create({
   },
   Card: {
     flex: 1,
-    backgroundColor: 'blue',
     paddingHorizontal: 20,
     paddingVertical: 60,
     borderTopLeftRadius: 40,
     borderTopRightRadius: 40,
-  },
+    backgroundColor: '#aca5a5ff',
+    shadowColor: 'gray',
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 0.5,
+    shadowRadius: 10,
+    elevation: 10,
+  }, 
   form: {
     gap: 20
   }
