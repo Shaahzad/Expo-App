@@ -7,6 +7,7 @@ export default function Index() {
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
+        gap: 20
       }}
     >
       <Link href={'/signup'} style={{
