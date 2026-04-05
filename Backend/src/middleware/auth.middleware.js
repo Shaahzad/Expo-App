@@ -1,6 +1,7 @@
 import jwt from "jsonwebtoken"
 import User from "../models/User.js"
 import "dotenv/config"
+
 const ProtectRoute = async(req, res, next) => {
 try {
     const token = req.header("Authorization").replace("Bearer ", "")
