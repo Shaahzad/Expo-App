@@ -15,7 +15,7 @@ image:{
     required: true
 },
 rating:{
-    type: number,
+    type: Number,
     required: true,
     min: 1,
     max: 5
@@ -32,4 +32,4 @@ user:{
 
 const Book = mongoose.model("Book", bookSchema)
 
-export default User
+export default Book
